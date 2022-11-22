@@ -1,0 +1,407 @@
+:root {
+  --p-20: 40px;
+  --p-10: 20px;
+  --rounded: 7px;
+  --rounded-circle: 50%;
+  --main-border: solid 1px #333;
+  --eee: #eee;
+  --ccc: #ccc;
+  --blue: #0075ff;
+  --alt-blue: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+}
+
+.p-20 {
+  padding: var(--p-20);
+}
+.px-20 {
+  padding: 0 var(--p-20);
+}
+.py-20 {
+  padding: var(--p-20) 0;
+}
+.pb-20 {
+  padding-bottom: var(--p-20);
+}
+.pt-20 {
+  padding-top: var(--p-20);
+}
+.pl-20 {
+  padding-left: var(--p-20);
+}
+.pr-20 {
+  padding-right: var(--p-20);
+}
+
+.p-10 {
+  padding: var(--p-10);
+}
+.px-10 {
+  padding: 0 var(--p-10);
+}
+.py-10 {
+  padding: var(--p-10) 0;
+}
+.pb-10 {
+  padding-bottom: var(--p-10);
+}
+.pt-10 {
+  padding-top: var(--p-10);
+}
+.pl-10 {
+  padding-left: var(--p-10);
+}
+.pr-10 {
+  padding-right: var(--p-10);
+}
+
+.m-20 {
+  margin: var(--p-20);
+}
+.my-20 {
+  margin: var(--p-20);
+}
+.mx-20 {
+  margin: 0 var(--p-20);
+}
+.mb-20 {
+  margin-bottom: var(--p-20);
+}
+.mt-20 {
+  margin-top: var(--p-20);
+}
+.ml-20 {
+  margin-left: var(--p-20);
+}
+.mr-20 {
+  margin-right: var(--p-20);
+}
+
+.m-10 {
+  margin: var(--p-10);
+}
+.my-10 {
+  margin: var(--p-10) 0;
+}
+.mx-10 {
+  margin: 0 var(--p-10);
+}
+.mb-10 {
+  margin-bottom: var(--p-10);
+}
+.mt-10 {
+  margin-top: var(--p-10);
+}
+.ml-10 {
+  margin-left: var(--p-10);
+}
+.mr-10 {
+  margin-right: var(--p-10);
+}
+
+.unstyle-list {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-b {
+  justify-content: space-between;
+}
+.justify-content-c {
+  justify-content: center;
+}
+
+.align-items-c {
+  align-items: center;
+}
+
+.f-c {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-1 {
+  flex: 1;
+}
+
+/* Start Grid */
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+}
+.grid-main > div {
+  --margin: 15px;
+  margin: 0 var(--margin) var(--margin) var(--margin);
+  background-color: white;
+}
+/* End Grid */
+
+/* Start Font */
+
+.fw-b {
+  font-weight: bold;
+}
+/* End Font */
+
+/* Start Colors */
+
+.color-ccc {
+  color: var(--ccc);
+}
+.color-blue {
+  color: var(--blue);
+}
+.color-red {
+  color: var(--red-color);
+}
+.color-orange {
+  color: var(--orange-color);
+}
+.color-green {
+  color: var(--green-color);
+}
+.bg-eee {
+  background-color: var(--eee);
+}
+.bg-ccc {
+  background-color: var(--ccc);
+}
+
+.bg-white {
+  background-color: white;
+}
+.bg-blue {
+  background-color: var(--blue) !important;
+}
+.bg-orange {
+  background-color: var(--orange-color) !important;
+}
+.bg-green {
+  background-color: var(--green-color) !important;
+}
+/* End Colors */
+
+/* Border */
+.rounded {
+  border-radius: var(--rounded) !important;
+}
+
+.rounded-circle {
+  border-radius: var(--rounded-circle) !important;
+}
+
+.border {
+  border: var(--main-border);
+}
+.border-y {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+.border-x {
+  border-left: var(--main-border);
+  border-right: var(--main-border);
+}
+.border-top {
+  border-top: var(--main-border);
+}
+.border-left {
+  border-left: var(--main-border);
+}
+.border-right {
+  border-right: var(--main-border);
+}
+.border-bottom {
+  border-bottom: var(--main-border);
+}
+
+.border-w-3 {
+  border-width: 3px !important;
+}
+
+.border-white {
+  border-color: white !important;
+}
+.border-blue {
+  border-color: var(--blue) !important;
+}
+.border-red {
+  border-color: var(--red-color) !important;
+}
+.border-orange {
+  border-color: var(--orange-color) !important;
+}
+.border-green {
+  border-color: var(--green-color) !important;
+}
+.border-eee {
+  border-color: var(--eee) !important;
+}
+.border-ccc {
+  border-color: var(--ccc) !important;
+}
+
+.small-avatar {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.middle-avatar {
+  --size: 55px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.big-avatar {
+  --size: 65px;
+  width: var(--size);
+  height: var(--size);
+}
+
+.overflow-h {
+  overflow: hidden;
+}
+
+/* Start Position */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* End Position */
+
+.w-100 {
+  width: 100%;
+}
+
+/* Start buttons */
+.btn,
+.btn-red {
+  all: unset;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.btn:hover {
+  background-color: var(--alt-blue);
+}
+.btn-red {
+  background-color: red !important;
+}
+.btn-red:hover {
+  background-color: rgba(255, 0, 0, 0.945) !important;
+}
+/* End buttons */
+.wrapper > div {
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.wrapper-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.wrapper-title-sm {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.wrapper-desc {
+  padding: 10px 0;
+  text-transform: capitalize;
+  color: rgb(184, 184, 184);
+}
+.wrapper-desc-sm {
+  padding: 10px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: rgb(184, 184, 184);
+}
+
+.form-control {
+  all: unset;
+  display: block;
+  border: solid 1px var(--ccc);
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin: 10px 0;
+  width: calc(100% - 10px);
+  /* 10px For Removing Padding From Width */
+  transition: 0.3s;
+}
+.form-control:disabled {
+  background-color: #f0f4f8;
+  color: #bbb;
+  cursor: no-drop;
+}
+.checkbox-toggle {
+  appearance: none;
+}
+.switch-toggle {
+  width: 80px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: var(--ccc);
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.switch-toggle::before {
+  content: "\f00d";
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  background-color: white;
+  color: var(--ccc);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.checkbox-toggle:checked + .switch-toggle {
+  background-color: var(--blue);
+}
+.checkbox-toggle:checked + .switch-toggle::before {
+  content: "\f00c";
+  color: var(--blue);
+  left: 55px;
+}
+
+simple-info {
+  background-color: #eee;
+  padding: 5px 8px;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 14px;
+}
