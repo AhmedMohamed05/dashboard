@@ -115,6 +115,7 @@
   text-align: left;
 }
 
+/* Felx */
 .d-flex {
   display: flex;
 }
@@ -133,14 +134,18 @@
 .f-c {
   flex-direction: column;
 }
-
+@media (max-width: 768px) {
+  .f-m-c {
+    flex-direction: column;
+  }
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
 .flex-1 {
   flex: 1;
 }
-
+/* Flex */
 /* Start Grid */
 .grid-main {
   display: grid;

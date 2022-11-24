@@ -45,7 +45,7 @@ body {
 *:focus {
   outline: none;
 }
-/* Start Paren */
+/* Start parent */
 .parent {
   display: flex;
   position: relative;
@@ -55,7 +55,7 @@ body {
   flex: 1;
   overflow: hidden;
 }
-/* End Parent  */
+/* End parent  */
 /* Start Back To Top Button */
 .back-to-top {
   all: unset;
@@ -283,12 +283,30 @@ nav img {
 /* End Global Properties */
 
 /* Start Dashboard */
+@media (max-width: 767px) {
+  .dashboard {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
 /* Start Welcome */
 .dashboard .welcome {
   padding: 0;
 }
+/* @media (max-width: 768px) {
+  .dashboard .welcome {
+    text-align: center;
+  }
+} */
 .dashboard .welcome .intro img {
   width: 200px;
+}
+@media (max-width: 768px) {
+  .dashboard .welcome .intro img {
+    display: none;
+  }
 }
 .dashboard .welcome .bottom {
   padding: 50px 20px;
@@ -297,10 +315,23 @@ nav img {
   top: calc((65px / 2) * -1);
   left: 20px;
 }
-
+@media (max-width: 768px) {
+  .dashboard .welcome .bottom img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .dashboard .welcome .bottom .text .desc {
   padding: 10px 0;
   color: var(--ccc);
+}
+@media (max-width: 768px) {
+  .dashboard .welcome .bottom .text {
+    flex-direction: column;
+  }
+  .dashboard .welcome .button-holder {
+    text-align: center;
+  }
 }
 /* End Welcome */
 /* Start Quick Draft */
@@ -449,11 +480,15 @@ nav img {
 .tickets .details .box {
   width: calc(50% - 15px);
   margin: 10px 0;
-  padding: 25px 0;
+  padding: 20px 0;
   border: solid 2px #eee;
   border-radius: 15px;
 }
-
+@media (max-width: 768px) {
+  .tickets .details .box {
+    width: 100%;
+  }
+}
 .tickets .details .box .icon svg {
   font-size: 40px;
 }
@@ -470,7 +505,13 @@ nav img {
   align-items: center;
   margin: 15px 0;
 }
-
+@media (max-width: 768px) {
+  .latest-news .details .box,
+  .latest-news .details .box .box-text {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .latest-news .details .box .img img {
   width: 90px;
   border-radius: 5px;
@@ -660,6 +701,10 @@ nav img {
   text-align: left;
   padding-left: 10px;
 }
+.social-media .social .box .button {
+  padding: 0;
+  padding-right: 4px;
+}
 .social-media .social .box.youtube {
   background-color: rgb(255 0 0 / 20%);
   color: red;
@@ -732,6 +777,14 @@ nav img {
 /* End Dashboard*/
 
 /* Start Settings */
+@media (max-width: 768px) {
+  .settings {
+    grid-template-columns: minmax(100px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
 /* Start  Site Control*/
 .site-control .textarea textarea {
   width: 100%;
