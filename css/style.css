@@ -978,9 +978,6 @@ nav img {
 .overview .right .box:not(:last-child) {
   border-bottom: solid 1px var(--ccc);
 }
-.overview .right .box:hover {
-  background-color: var(--eee);
-}
 .overview .right .box > div {
   display: flex;
   justify-content: space-between;

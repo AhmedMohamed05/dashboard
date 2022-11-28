@@ -13,26 +13,11 @@
   --red-color: #f44336;
 }
 
-.p-20 {
-  padding: var(--p-20);
-}
-.px-20 {
-  padding: 0 var(--p-20);
-}
 .py-20 {
   padding: var(--p-20) 0;
 }
-.pb-20 {
-  padding-bottom: var(--p-20);
-}
 .pt-20 {
   padding-top: var(--p-20);
-}
-.pl-20 {
-  padding-left: var(--p-20);
-}
-.pr-20 {
-  padding-right: var(--p-20);
 }
 
 .p-10 {
@@ -44,39 +29,15 @@
 .py-10 {
   padding: var(--p-10) 0;
 }
-.pb-10 {
-  padding-bottom: var(--p-10);
-}
 .pt-10 {
   padding-top: var(--p-10);
 }
-.pl-10 {
-  padding-left: var(--p-10);
-}
-.pr-10 {
-  padding-right: var(--p-10);
-}
 
-.m-20 {
-  margin: var(--p-20);
-}
-.my-20 {
-  margin: var(--p-20);
-}
-.mx-20 {
-  margin: 0 var(--p-20);
-}
 .mb-20 {
   margin-bottom: var(--p-20);
 }
 .mt-20 {
   margin-top: var(--p-20);
-}
-.ml-20 {
-  margin-left: var(--p-20);
-}
-.mr-20 {
-  margin-right: var(--p-20);
 }
 
 .m-10 {
@@ -84,9 +45,6 @@
 }
 .my-10 {
   margin: var(--p-10) 0;
-}
-.mx-10 {
-  margin: 0 var(--p-10);
 }
 .mb-10 {
   margin-bottom: var(--p-10);
@@ -192,15 +150,6 @@
 .bg-white {
   background-color: white;
 }
-.bg-blue {
-  background-color: var(--blue) !important;
-}
-.bg-orange {
-  background-color: var(--orange-color) !important;
-}
-.bg-green {
-  background-color: var(--green-color) !important;
-}
 /* End Colors */
 
 /* Border */
@@ -219,10 +168,6 @@
   border-top: var(--main-border);
   border-bottom: var(--main-border);
 }
-.border-x {
-  border-left: var(--main-border);
-  border-right: var(--main-border);
-}
 .border-top {
   border-top: var(--main-border);
 }
@@ -232,9 +177,6 @@
 .border-right {
   border-right: var(--main-border);
 }
-.border-bottom {
-  border-bottom: var(--main-border);
-}
 
 .border-w-3 {
   border-width: 3px !important;
@@ -243,39 +185,12 @@
 .border-white {
   border-color: white !important;
 }
-.border-blue {
-  border-color: var(--blue) !important;
-}
-.border-red {
-  border-color: var(--red-color) !important;
-}
-.border-orange {
-  border-color: var(--orange-color) !important;
-}
-.border-green {
-  border-color: var(--green-color) !important;
-}
-.border-eee {
-  border-color: var(--eee) !important;
-}
 .border-ccc {
   border-color: var(--ccc) !important;
 }
 
-.small-avatar {
-  --size: 40px;
-  width: var(--size);
-  height: var(--size);
-}
-
 .middle-avatar {
   --size: 55px;
-  width: var(--size);
-  height: var(--size);
-}
-
-.big-avatar {
-  --size: 65px;
   width: var(--size);
   height: var(--size);
 }
@@ -401,12 +316,4 @@
   content: "\f00c";
   color: var(--blue);
   left: 55px;
-}
-
-simple-info {
-  background-color: #eee;
-  padding: 5px 8px;
-  border-radius: 5px;
-  width: fit-content;
-  font-size: 14px;
 }
